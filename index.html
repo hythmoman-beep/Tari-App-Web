@@ -351,6 +351,15 @@
     </div>
 
     <script>
+         window.hideSplash = function() {
+            const splash = document.getElementById('splash-screen');
+            if(splash) {
+                splash.style.opacity = '0';
+                setTimeout(() => { splash.style.display = 'none'; }, 300); // Force remove
+            } else {
+                console.error("Splash screen element not found!");
+            }
+        };
         const SUPABASE_URL = "https://fpgspmhgwcmhaaxsphcd.supabase.co";
         const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwZ3NwbWhnd2NtaGFheHNwaGNkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU4MjYyMTEsImV4cCI6MjA4MTQwMjIxMX0.QyChZ3agLF1MiTzB8XzbrP4pCgBXsT1i9VWfQqu_VOw";
         const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
