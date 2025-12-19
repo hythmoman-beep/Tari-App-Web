@@ -132,28 +132,6 @@
             <div class="h-64 bg-slate-900 relative"><img id="crop-target" class="max-w-full max-h-full block"></div>
             <div class="p-4 border-t bg-white flex justify-end gap-3"><button onclick="finishCrop()" class="w-full bg-brand text-white py-3 rounded-xl font-bold shadow-lg">Save Picture</button></div>
         </div>
-    </div>
-
-    <div id="splash-screen" class="fixed inset-0 bg-slate-900 flex flex-col items-center justify-between pt-16 pb-10 px-6 z-[200] overflow-hidden transition-transform duration-700">
-        <div class="floating-icon" style="top: 15%; left: 10%; animation-delay: 0s;">🍔</div>
-        <div class="floating-icon" style="top: 25%; right: 10%; animation-delay: 1.5s;">🍟</div>
-        <div class="floating-icon" style="bottom: 30%; left: 15%; animation-delay: 0.5s;">🥤</div>
-        <div class="floating-icon" style="top: 50%; right: 20%; animation-delay: 2s;">🍕</div>
-        <div class="floating-icon" style="bottom: 40%; right: 5%; animation-delay: 1s;">🌮</div>
-        <div class="floating-icon" style="top: 10%; left: 50%; animation-delay: 2.5s; font-size: 2.5rem;">🌭</div>
-        <img id="splash-bg-img" class="absolute inset-0 w-full h-full object-cover opacity-30 hidden z-0">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/60 to-slate-900 pointer-events-none z-0"></div>
-        <div class="text-center z-10 flex flex-col items-center relative mt-10">
-            <span id="splash-subtitle-text" class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-6 tracking-wider shadow-lg shadow-orange-500/30 btn-brand">PREMIUM FOOD TRUCK</span>
-            <h1 id="splash-title-text" class="text-6xl font-extrabold text-white mb-2 leading-tight tracking-tighter drop-shadow-lg">TARI</h1>
-            <p id="splash-intro" class="text-slate-300 text-sm font-medium max-w-[250px] leading-relaxed">Delicious burgers and fries made with passion and served fresh daily.</p>
-        </div>
-        <div class="relative w-64 h-64 z-10 my-auto"><img id="splash-circle-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" class="w-full h-full object-cover rounded-full border-4 border-slate-800 shadow-2xl"></div>
-        <button id="order-now-btn" class="w-full bg-orange-500 text-white font-bold py-4 rounded-2xl shadow-xl shadow-orange-500/20 active:scale-95 transition text-lg z-10 animate-pulse btn-brand flex items-center justify-center gap-2">
-  Order Now <i class="fa-solid fa-arrow-up"></i>
-        </button>
-    </div>
-
     <div id="view-auth" class="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center p-8 auth-hidden shadow-2xl transition-transform duration-300 transform translate-y-full">
         <button onclick="closeAuth()" class="absolute top-6 right-6 text-slate-400 p-2 hover:text-slate-800"><i class="fa-solid fa-xmark text-2xl"></i></button>
         <div class="w-20 h-20 bg-orange-500 rounded-2xl flex items-center justify-center mb-6 shadow-xl shadow-orange-200 btn-brand"><i class="fa-solid fa-lock text-4xl text-white"></i></div>
